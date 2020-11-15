@@ -1,9 +1,11 @@
+#include <algorithm.h>
+
 #include "heap.h"
 
 void siftUp(int v, int heap[]) {
-    while (v > 0 && heap[v] < heap[(v — 1) / 2]) {
-        swap(heap[v], heap[(v — 1) / 2]);
-        v = (v — 1) / 2;
+    while (v > 0 && heap[v] < heap[(v - 1) / 2]) {
+        swap(heap[v], heap[(v - 1) / 2]);
+        v = (v - 1) / 2;
     }
 }
 
@@ -21,7 +23,7 @@ void siftDown(int v, int heap[], int size) {
 
 void push(int x, int heap[], int size) {
     heap[size++] = x;
-    siftUp(size — 1, heap);
+    siftUp(size - 1, heap);
 }
 
 int top(int heap[]) {
