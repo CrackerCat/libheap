@@ -5,12 +5,12 @@
 extern "C" {
 #endif
 
-void siftUp(int v);
-void siftDown(int v);
+void siftUp(int v, int heap[]);
+void siftDown(int v, int heap[], int size);
 
-void push(int x);
-void top();
-void pop();
+void push(int x, int heap[], int size);
+void top(int heap[]);
+void pop(int heap[], int size);
 
 #ifdef __cplusplus
 }
