@@ -21,7 +21,7 @@ void siftDown(int v, int heap[], int size) {
 
 void push(int x, int heap[], int size) {
     heap[size++] = x;
-    siftUp(size — 1);
+    siftUp(size — 1, heap);
 }
 
 int top(int heap[]) {
@@ -31,6 +31,6 @@ int top(int heap[]) {
 int pop(int heap[], int size) {
     int t = heap[0];
     heap[0] = heap[--size];
-    siftDown(0);
+    siftDown(0, heap, size);
     return t;
 }
