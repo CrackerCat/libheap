@@ -9,8 +9,8 @@ void siftUp(int v, int heap[]);
 void siftDown(int v, int heap[], int size);
 
 void push(int x, int heap[], int size);
-void top(int heap[]);
-void pop(int heap[], int size);
+int top(int heap[]);
+int pop(int heap[], int size);
 
 #ifdef __cplusplus
 }
