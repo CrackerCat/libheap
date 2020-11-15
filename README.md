@@ -1,2 +1,2 @@
 # libheap
-libheap - C++ library for controlling heap.
+libheap - C library for controlling heap.
